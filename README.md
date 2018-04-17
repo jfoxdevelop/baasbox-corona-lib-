@@ -7,6 +7,7 @@ local baas = require( "BaasBox" )
 -- ServerURL:PORT, ApplicationCode
 baas.init("http://serverURL:9001", "1111111")
 ```
+
 <hr>
 
 ```
@@ -18,6 +19,7 @@ baas.signUp("userName", "Pass", callbackFunc)
 baas.logout(callbackFunc)<
 ```
 <hr>
+
 ```
 local json = require ("json")
 local data = {b=1}
@@ -30,7 +32,9 @@ baas.createDocument("CollectionName", data,
        end)
   end)
 ```
+
 <hr>
+
 ```
 local json = require ("json")
 baas.getDocument("level", "625ff1cf-a0c0-414a-908e-280c79854d19",
